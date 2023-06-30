@@ -1,5 +1,7 @@
 package com.example.spring.controlers;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+
 import com.example.spring.entities.People;
 import com.example.spring.services.PeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/peopleapi")
 public class controler {
     private PeopleService peopleService;
 
